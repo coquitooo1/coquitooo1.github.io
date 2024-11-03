@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Franklin Delano Roosevelt</title>
+    <link rel="stylesheet" href="contactanos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="Menu.html"><i class="fas fa-book"></i> MENÚ </a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <h2>Información General</h2>
+        <p>El Instituto Franklin Delano Roosevelt se dedica a la formación integral de jóvenes, ofreciendo una educación de calidad y programas innovadores.</p>
+        
+        <h2>Matrículas</h2>
+        <p>Para más información sobre matrículas y procesos de inscripción, por favor contáctanos a través del siguiente correo:</p>
+        <p class="email">info@fdr.edu</p>
+        
+        <h2>Quejas y Sugerencias</h2>
+        <p>Si tienes alguna queja o sugerencia, no dudes en escribirnos. Tu opinión es importante para nosotros.</p>
+        
+        <a href="mailto:sugerencias@fdr.edu" class="button">Enviar Correo</a>
+    </div>
+
+    <footer>
+        <p>¡Esperamos tu mensaje!</p>
+    </footer>
+
+    <!-- Botón "Ir arriba" -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">↑ Ir arriba</a>
+
+    <script>
+        // Mostrar/ocultar el botón "Ir arriba"
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Función para desplazarse hacia arriba
+        document.getElementById("scrollToTop").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    background: linear-gradient(to right, #6190c5, #be77dc);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centrar todo el texto */
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
+}
+
+.history-image {
+    width: 300px; /* ajusta según sea necesario */
+    margin: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.history-image:hover {
+    opacity: 1;
+}
+
+.buttons {
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* Color más oscuro al pasar el mouse */
+}
+
+footer {
+    margin-top: 20px;
+}

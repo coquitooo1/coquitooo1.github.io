@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="ruta/del/logo_sin_fondo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>C.E.M.G. Franklin Delano Roosevelt</title>
+</head>
+<body>
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Ofertaacademica.html"><i class="fas fa-book"></i> Oferta Académica</a></li>
+            <li><a href="instalaciones.html"><i class="fas fa-building"></i> Instalaciones</a></li>
+            <li><a href="Quinessomos.html"><i class="fas fa-users"></i> Quienes Somos</a></li>
+            <li><a href="Promo.html"><i class="fas fa-graduation-cap"></i> Promo</a></li>
+            <li><a href="Historia.html"><i class="fas fa-history"></i> Historia</a></li>
+            <li><a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="video">     
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LRhTmARUKPg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+        </section>        
+<hr>
+        <section id="cuadros">
+            <div class="cuadro">
+                <img src="Docentes.jpg" alt="Docentes Capacitados">
+                <h2>Educadores Comprometidos</h2>
+                <p>Nuestros educadores están dedicados a inspirar a cada estudiante con su pasión por el conocimiento.</p>
+            </div>
+            <div class="cuadro">
+                <img src="Instalaciones.jpg" alt="Instalaciones Modernas">
+                <h2>Infraestructura de Vanguardia</h2>
+                <p>Instalaciones diseñadas para fomentar un ambiente de aprendizaje dinámico y colaborativo.</p>
+            </div>
+            <div class="cuadro">
+                <img src="Innovacion.jpg" alt="Innovación en Educación">
+                <h2>Metodologías Innovadoras</h2>
+                <p>Implementamos técnicas modernas para preparar a nuestros estudiantes para el futuro.</p>
+            </div>
+        </section>
+    </hr>
+<hr>
+        <section id="galeria">
+            <h2>Galería de Actividades</h2>
+            <div class="galeria-imagenes">
+                <img src="387055939_713124370835833_2679481434415868174_n.jpg" alt="Galería 1">
+                <img src="353848815_731616108972197_6979614597933959782_n.jpg" alt="Galería 2">
+                <img src="387815253_713125074169096_4903128481903782028_n.jpg" alt="Galería 3">
+            </div>
+        </section>
+    </hr>
+
+        
+    </main>
+
+    <footer>
+        <p>© 2024 C.E.M.G. Franklin Delano Roosevelt</p>
+    </footer>
+
+    <div class="sidebar">
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" class="icono facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" class="icono whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com" target="_blank" class="icono twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">▲</button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

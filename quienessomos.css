@@ -1,0 +1,111 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #6a5acd, #00bfff); /* Degradado azul y morado */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(76, 175, 80, 0.9); /* Verde translúcido */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo oscuro translúcido */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(87, 87, 87, 0.8); /* Color más oscuro al pasar el mouse */
+}
+
+/* Sección "Quienes Somos" */
+.about-us {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.about-us h2 {
+    color: #4CAF50; /* Verde para el título */
+}
+
+/* Galería de imágenes */
+.media {
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    border-radius: 8px;
+}
+
+/* Sección de video */
+.video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo del video */
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo oscuro translúcido */
+    color: rgb(72, 94, 204);
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}

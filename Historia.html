@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Instituto Franklin Delano Roosevelt</title>
+    <link rel="stylesheet" href="historia.css">
+</head>
+<body>
+    <header>
+        <h1>Historia del Instituto Franklin Delano Roosevelt</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Menu.html"><i class="fas fa-book"></i>Menu</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="history">
+            <h2>Fundación</h2>
+            <p id="texto-fundacion">El instituto "Franklin Delano Roosevelt", fue fundado en 1945, según acuerdo No.1030 del 26 de junio de este mismo año, surgió como un Centro Educativo de carácter privado. Para 1965 adquiere carácter semioficial al conseguir una subvención de Estado. Para 1980 el instituto por un común acuerdo, fue sostenido por la subvención del Estado, por una contraparte de la Empresa Nacional Portuaria, Refinería Texaco y por las Fuerzas Vivas del puerto. Ya para 1981 es el Estado quien asume la responsabilidad del pago de salario al personal de la institución; se constitución en un centro de carácter oficial, objetivo que fue logrado mediante una tenaz emprendida por el personal laborante, jóvenes estudiantes, padres de Familia y comunidad en general, este movimiento huelguístico en pro de la oficialización del instituto tuvo lugar en agosto de 1979.</p>
+            <img src="5d3c4a_cc33366920f24c808a8f20de910e2b60~mv2.jpg" alt="Historia del Instituto" class="history-image">
+            <div class="buttons">
+                <button class="btn" onclick="leerTexto('texto-fundacion')">Leer</button>
+                <button class="btn" onclick="detenerLectura()">Parar</button>
+            </div>
+
+            <p>Desde el año de su creación el instituto ha transitado por una senda de fructíferos resultados cualitativos, cambios que se aceleran y acrecentar, producto de una innovada visión administrativa y de compromiso de los Docentes en las tareas educativas.</p>
+
+            <h2>Programas Académicos</h2>
+            <img src="Foto de ISEMED-12-BTPI-1-4.jpg" alt="Historia del Instituto" class="history-image">
+            <div class="buttons">
+                <button class="btn" onclick="leerTexto('texto-programas')">Leer</button>
+                <button class="btn" onclick="detenerLectura()">Parar</button>
+            </div>
+            <p id="texto-programas">Se inició con las modalidades para optar al título de Bachillerato en ciencias y letras, maestro de enseñanza primaria urbana, perito mercantil y contador público y secretaria comercial. Luego se fueron incrementando en la posibilidad de una mística de trabajo fundamentada en el que hacer Científico; bajo este panorama dinamizador se logra la apertura más secciones en el área de educación comercial. El Bachillerato Técnico en secretariado, Ciclo común, Bachillerato en Administración de empresas, técnico en Computación, Bachillerato técnico en estructuras Metálicas, la jornada Nocturna e ISEMED. Para el 2014 se da el marco de la reforma educativa la transformación en los bachilleratos técnicos profesionales aplicándose en informática por técnico en Computación, administración Hotelera por Técnico en Hostelería y Turismo, Construcciones Metálicas por Bachillerato Técnico en Estructuras Metálicas y Tercer Ciclo por Ciclo común; ya en el 2015 se transforma Bachillerato en Ciencias y Humanidades por Bachillerato en ciencias y letras, Bachillerato Técnico profesional en Administración de empresas por Bachillerato en Admón. de Empresa, Bachillerato Técnico en Contaduría y Finanzas por Educación Comercial.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Instituto Franklin Delano Roosevelt</p>
+    </footer>
+
+    <script>
+        let speechSynthesisUtterance;
+
+        function leerTexto(id) {
+            const texto = document.getElementById(id).innerText;
+            speechSynthesisUtterance = new SpeechSynthesisUtterance(texto);
+            speechSynthesis.speak(speechSynthesisUtterance);
+        }
+
+        function detenerLectura() {
+            speechSynthesis.cancel();
+        }
+    </script>
+</body>
+</html>

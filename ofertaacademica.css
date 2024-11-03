@@ -1,0 +1,164 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e0f7fa, #fce4ec); /* Degradado suave */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF; /* Azul moderno */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3; /* Azul más oscuro para el menú */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003f7f; /* Azul aún más oscuro al pasar el mouse */
+}
+
+/* Sección de cursos */
+.courses {
+    padding: 40px;
+    text-align: center;
+}
+
+.courses h2 {
+    color: #fbfbfb; /* Azul moderno */
+    margin-bottom: 20px;
+    font-size: 28px; /* Aumentado el tamaño */
+    letter-spacing: 2px; /* Más espacio entre letras */
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptable a la pantalla */
+    gap: 40px; /* Separación entre cuadros */
+}
+
+/* Estilo del curso */
+.course {
+    perspective: 1200px;
+}
+
+.course-inner {
+    width: 100%;
+    height: 300px; /* Altura fija */
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto 3D */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.course:hover .course-inner {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.course-front, .course-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+/* Frente del curso */
+.course-front {
+    background-color: white; /* Fondo blanco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.course-front img {
+    width: 100%; /* Ajusta para que ocupe todo el cuadro */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover;
+    border-bottom: 2px solid #007BFF; /* Bordes del color azul moderno */
+}
+
+.course-front h3 {
+    color: #007BFF; /* Color del texto del encabezado */
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 20px; /* Aumentado el tamaño */
+}
+
+/* Parte trasera del curso */
+.course-back {
+    background-color: #28a745; /* Verde moderno */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.course-back h3 {
+    font-size: 22px; /* Aumentado el tamaño */
+    margin-bottom: 10px;
+}
+
+.course-back p {
+    font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3; /* Azul oscuro */
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00bfff; /* Color al pasar el mouse */
+}

@@ -1,0 +1,91 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #6a5acd, #00bfff); /* Degradado azul y morado */
+    color: white;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 100, 255, 0.8);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 60, 200, 0.8);
+}
+
+/* Sección de instalaciones */
+.facilities {
+    padding: 40px;
+    text-align: center;
+}
+
+.facilities h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la lista de instalaciones */
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptable a la pantalla */
+    gap: 20px; /* Separación entre cuadros */
+}
+
+/* Estilo de cada instalación */
+.facility {
+    background-color: rgba(67, 38, 161, 0.9); /* Fondo blanco translúcido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.facility h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.facility img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
